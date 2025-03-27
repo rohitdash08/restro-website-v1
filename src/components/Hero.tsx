@@ -381,6 +381,9 @@ const Hero = () => {
           <button className="px-6 py-3 border-2 border-kokkari-gold text-kokkari-gold hover:bg-kokkari-gold hover:text-kokkari-dark transition-colors duration-300 font-sans tracking-wider button-reservation">
             MAKE A RESERVATION
           </button>
+          {/* <button className="px-6 py-3 border-2 border-kokkari-gold text-kokkari-gold bg-kokkari-light transition-colors duration-300 font-sans tracking-wider button-reservation">
+            MAKE A RESERVATION
+          </button> */}
         </div>
       </div>
     </div>

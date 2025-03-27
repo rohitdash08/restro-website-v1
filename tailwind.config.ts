@@ -69,6 +69,9 @@ export default {
           olive: "#4A4A3A",
           wood: "#8C5E42",
         },
+        // "kokkari-light": "#e0d6bf", // example lighter variant
+        // "kokkari-gold": "#D4AF37",
+        // "kokkari-dark": "#2E2E2E",
       },
 
       fontFamily: {
