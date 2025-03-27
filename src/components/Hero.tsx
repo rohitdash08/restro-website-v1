@@ -296,7 +296,7 @@
 // v3- final code
 
 import { useEffect, useState } from "react";
-import ImageReveal from "./ImageReveal";
+// import ImageReveal from "./ImageReveal";
 import { images } from "../assets/images";
 
 const Hero = () => {
@@ -318,7 +318,7 @@ const Hero = () => {
       </div>
 
       {/* Grid of 4 images */}
-      <div className="hero-grid">
+      {/* <div className="hero-grid">
         <ImageReveal
           src={images.privateRoom}
           alt="Kokkari dish"
@@ -343,7 +343,7 @@ const Hero = () => {
           direction="bottom"
           delay={1200}
         />
-      </div>
+      </div> */}
 
       {/* Overlay */}
       <div className="overlay"></div>
