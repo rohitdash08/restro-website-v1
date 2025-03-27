@@ -39,11 +39,12 @@ const ImageReveal: React.FC<ImageRevealProps> = ({
   };
 
   return (
-    <div className="image-container">
+    // <div className="image-container">
+    <div className="image-container rounded-lg overflow-hidden shadow-lg">
       <img
         src={src}
         alt={alt}
-        className={`object-cover w-full h-full ${
+        className={`object-cover w-full h-full brightness-110 contrast-105 ${
           isLoaded ? getAnimationClass() : "opacity-0"
         }`}
         style={{ animationDelay: `${delay}ms` }}

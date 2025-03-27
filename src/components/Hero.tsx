@@ -308,6 +308,15 @@ const Hero = () => {
 
   return (
     <div className="relative w-full h-screen overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0 bg-kokkari-dark">
+        <img
+          src={images.backgroundimage}
+          alt="Restaurant background"
+          className="w-full h-full object-cover opacity-30"
+        />
+      </div>
+
       {/* Grid of 4 images */}
       <div className="hero-grid">
         <ImageReveal
@@ -341,6 +350,18 @@ const Hero = () => {
 
       {/* Centered content */}
       <div className="center-content">
+        {/* <div
+          className={`transform transition-all duration-1000 ${
+            loaded ? "animate-logo-reveal" : "opacity-0"
+          }`}
+          style={{ transitionDelay: "1500ms" }}
+        >
+          <h1 className="text-7xl md:text-8xl text-kokkari-gold font-serif mb-4">
+            KOKKARI
+          </h1>
+          <p className="text-kokkari-cream text-xl md:text-2xl mb-8 font-light tracking-wide">
+            ESTIATORIO
+          </p> */}
         <div
           className={`transform transition-all duration-1000 ${
             loaded ? "animate-logo-reveal" : "opacity-0"
