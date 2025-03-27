@@ -44,7 +44,7 @@ const Index = () => {
 
   return (
     <div
-      className={`min-h-screen transition-opacity duration-1000 ${
+      className={`min-h-screen transition-opacity bg-kokkari-dark duration-1000 ${
         isLoaded ? "opacity-100" : "opacity-0"
       }`}
     >

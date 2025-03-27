@@ -52,7 +52,25 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        sidebar: {
+          DEFAULT: "hsl(var(--sidebar-background))",
+          foreground: "hsl(var(--sidebar-foreground))",
+          primary: "hsl(var(--sidebar-primary))",
+          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
+          accent: "hsl(var(--sidebar-accent))",
+          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
+          border: "hsl(var(--sidebar-border))",
+          ring: "hsl(var(--sidebar-ring))",
+        },
+        kokkari: {
+          gold: "#D4B572",
+          dark: "#1A1412",
+          cream: "#FAF7F2",
+          olive: "#4A4A3A",
+          wood: "#8C5E42",
+        },
       },
+
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
         lato: ["Lato", "sans-serif"],
@@ -75,9 +93,17 @@ export default {
           "0%": { opacity: "0", transform: "translateY(10px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        "slide-in-top": {
+          "0%": { transform: "translateY(-100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
         slideInRight: {
           "0%": { transform: "translateX(100%)" },
           "100%": { transform: "translateX(0)" },
+        },
+        "slide-in-bottom": {
+          "0%": { transform: "translateY(100%)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
         },
         slideInLeft: {
           "0%": { transform: "translateX(-100%)" },
@@ -91,6 +117,10 @@ export default {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
         },
+        "logo-reveal": {
+          "0%": { transform: "translateY(20px)", opacity: "0" },
+          "100%": { transform: "translateY(0)", opacity: "1" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -98,6 +128,12 @@ export default {
         fadeIn: "fadeIn 0.6s ease-out forwards",
         slideInRight: "slideInRight 0.5s ease-out",
         slideInLeft: "slideInLeft 0.5s ease-out",
+        "slide-in-top":
+          "slide-in-top 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
+        "slide-in-bottom":
+          "slide-in-bottom 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) both",
+        "logo-reveal": "logo-reveal 1s ease-out forwards",
+
         rotate: "rotate 30s linear infinite",
         float: "float 3s ease-in-out infinite",
       },
